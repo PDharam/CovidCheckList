@@ -1,6 +1,8 @@
 package com.dharampravin.covidchecklist.dashboard.view
 
+import com.dharampravin.covidchecklist.root.BaseView
 
-interface DashboardView {
+
+interface DashboardView : BaseView {
     fun init()
 }

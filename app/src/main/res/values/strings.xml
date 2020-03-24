@@ -16,4 +16,8 @@
     <string name="question_10">Have you traveled recently during the past 14 days?</string>
     <string name="question_11">Do you have a travel history to COVID-19 infected area?</string>
     <string name="question_12">Do you have direct contact or is taking care of a positive COVID-19 patient?</string>
+    <string name="score_result_1">May be stress related and observe.</string>
+    <string name="score_result_2">Hydrate properly and proper personal hygiene. Observe and Re-evaluate after 2 days.</string>
+    <string name="score_result_3">Seek a consultation with Doctor.</string>
+    <string name="score_result_4">Call the DOH Hotline 02-8-651-7800.</string>
 </resources>

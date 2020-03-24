@@ -6,9 +6,11 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.dharampravin.covidchecklist.R
 import com.dharampravin.covidchecklist.dashboard.view.DashboardActivity
+import com.dharampravin.covidchecklist.splash.presenter.SplashPresenter
+import com.dharampravin.covidchecklist.splash.presenter.SplashPresenterImpl
 
 class SplashActivity : AppCompatActivity(), SplashView {
-
+    private lateinit var splashPresenter: SplashPresenter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
@@ -16,6 +18,7 @@ class SplashActivity : AppCompatActivity(), SplashView {
     }
 
     override fun init() {
+        splashPresenter = SplashPresenterImpl(this)
         goToDashbaord()
     }
 

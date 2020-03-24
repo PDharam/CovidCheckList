@@ -13,4 +13,8 @@
     <string name="question_10">क्या आपने पिछले १४ दिनों के दौरान यात्रा की है?</string>
     <string name="question_11">क्या कभी आपने कोविड-19 संक्रमित क्षेत्र की यात्रा की है?</string>
     <string name="question_12">क्या आप कोवीड19 के रोगियो के साथ प्रत्यक्ष संपर्क मै है या उनकी सेवा कर रहे है?</string>
+    <string name="score_result_1">May be stress related and observe.</string>
+    <string name="score_result_2">Hydrate properly and proper personal hygiene. Observe and Re-evaluate after 2 days.</string>
+    <string name="score_result_3">Seek a consultation with Doctor.</string>
+    <string name="score_result_4">Call the DOH Hotline 02-8-651-7800.</string>
 </resources>

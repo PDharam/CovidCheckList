@@ -7,11 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.dharampravin.covidchecklist.R
-import com.dharampravin.covidchecklist.calculate_corona_score.view.CalculateCoronaScoreActivity
+import com.dharampravin.covidchecklist.corona_checklist.view.CoronaCheckListActivity
+import com.dharampravin.covidchecklist.ui.home.presenter.HomeFragmentPresenter
+import com.dharampravin.covidchecklist.ui.home.presenter.HomeFragmentPresenterImpl
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(), HomeFragmentView, View.OnClickListener {
-
+    private lateinit var homeFragmentPresenter: HomeFragmentPresenter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,7 +33,7 @@ class HomeFragment : Fragment(), HomeFragmentView, View.OnClickListener {
     }
 
     override fun init() {
-
+        homeFragmentPresenter = HomeFragmentPresenterImpl(this)
     }
 
     override fun setListener() {
@@ -45,7 +47,7 @@ class HomeFragment : Fragment(), HomeFragmentView, View.OnClickListener {
     }
 
     private fun openCalcuateCoronaScoreActivity() {
-        val i = Intent(activity, CalculateCoronaScoreActivity::class.java)
+        val i = Intent(activity, CoronaCheckListActivity::class.java)
         startActivity(i)
     }
 }

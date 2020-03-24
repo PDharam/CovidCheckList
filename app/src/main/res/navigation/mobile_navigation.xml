@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_india"
-        android:name="com.dharampravin.covidchecklist.ui.dashboard.DashboardFragment"
+        android:name="com.dharampravin.covidchecklist.ui.india.view.IndiaFragment"
         android:label="@string/title_india"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_india" />
 
     <fragment
         android:id="@+id/navigation_world"
-        android:name="com.dharampravin.covidchecklist.ui.notifications.NotificationsFragment"
+        android:name="com.dharampravin.covidchecklist.ui.world.view.WorldFragment"
         android:label="@string/title_world"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_world" />
 </navigation>
