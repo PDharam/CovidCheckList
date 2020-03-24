@@ -27,4 +27,9 @@
     <string name="who_youtube_2" translatable="false">https://youtu.be/mOV1aBVYKGA</string>
     <string name="india_email_1" translatable="false">ncov2019@gov.in</string>
     <string name="india_email_2" translatable="false">ncov2019@gmail.com</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>हिन्दी</item>
+        <item>मराठी</item>
+    </string-array>
 </resources>
