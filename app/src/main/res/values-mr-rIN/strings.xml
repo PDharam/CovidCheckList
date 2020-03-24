@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CovidCheckList</string>
+    <string name="question_1">तुम्हाला खोकला आहे का?</string>
+    <string name="question_2">तुम्हाला सर्दी आहे का?</string>
+    <string name="question_3">तुम्हाला जुलाब होत आहेत का?</string>
+    <string name="question_4">तुमचा घसा खवखवत आहे का?</string>
+    <string name="question_5">तुम्हाल अंगदुखीचा त्रास होत आहे का?</string>
+    <string name="question_6">तुम्हाला डोकेदुखी आहे का?</string>
+    <string name="question_7">तुम्हाला ताप (शरीराचे तापमान ३७.८ डिग्री पेक्षा जास्त) आहे का?</string>
+    <string name="question_8">तुम्हाला श्वास घ्यायला त्रास होत आहे का?</string>
+    <string name="question_9">तुम्हाला थकवा जाणवत आहे का?</string>
+    <string name="question_10">तुम्ही गेल्या १४ दिवसात कुठे प्रवास केला आहे का?</string>
+    <string name="question_11">तुम्ही कधी कोविड19 संक्रमित क्षेत्रात प्रवास केला आहे का?</string>
+    <string name="question_12">तुम्ही कोविड१९ रुग्णांच्या थेट संपर्कात आहात का किंवा त्यांची सेवा करत आहात का?</string>
 </resources>

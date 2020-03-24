@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Covid Check List hindi</string>
+    <string name="question_1">क्या आपको खांसी है?</string>
+    <string name="question_2">क्या आपको जुकाम है?</string>
+    <string name="question_3">क्या आपको दस्त हो रहे है?</string>
+    <string name="question_4">क्या आपके गले में खराश है?</string>
+    <string name="question_5">क्या आपको बदनदर्द हो रहा है?</string>
+    <string name="question_6">क्या आपको सिरदर्द है?</string>
+    <string name="question_7">क्या आपको बुखार (शरीर का तापमान 37.8 डिग्री सेल्सियस से अधिक) है?</string>
+    <string name="question_8">क्या आपको सांस लेने में कठिनाई हो रही है?</string>
+    <string name="question_9">क्या आप थकान का अनुभव कर रहे हैं?</string>
+    <string name="question_10">क्या आपने पिछले १४ दिनों के दौरान यात्रा की है?</string>
+    <string name="question_11">क्या कभी आपने कोविड-19 संक्रमित क्षेत्र की यात्रा की है?</string>
+    <string name="question_12">क्या आप कोवीड19 के रोगियो के साथ प्रत्यक्ष संपर्क मै है या उनकी सेवा कर रहे है?</string>
 </resources>

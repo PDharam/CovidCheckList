@@ -7,13 +7,13 @@
     <string name="question_1">Do you have cough?</string>
     <string name="question_2">Do you have cold?</string>
     <string name="question_3">Are you having Diarrhea?</string>
-    <string name="question_4">Are you experincing Body Aches?</string>
-    <string name="question_5">Do you have headache?</string>
-    <string name="question_6">Do you have have feaver ?</string>
-    <string name="question_7">h</string>
-    <string name="question_8">jj</string>
-    <string name="question_9">jhh</string>
-    <string name="question_10">jhhjg</string>
-    <string name="question_11">jjhhjg</string>
-    <string name="question_12">ygj</string>
+    <string name="question_4">Are you have sore throat?</string>
+    <string name="question_5">Are you experiencing Body Aches?</string>
+    <string name="question_6">Do you have headache?</string>
+    <string name="question_7">Do you have fever (body temperature more than 37.8 degree C)?</string>
+    <string name="question_8">Are you having difficulty in breathing?</string>
+    <string name="question_9">Are you experiencing Fatigue?</string>
+    <string name="question_10">Have you traveled recently during the past 14 days?</string>
+    <string name="question_11">Do you have a travel history to COVID-19 infected area?</string>
+    <string name="question_12">Do you have direct contact or is taking care of a positive COVID-19 patient?</string>
 </resources>
