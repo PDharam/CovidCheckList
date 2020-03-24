@@ -1,7 +1,19 @@
 <resources>
-    <string name="app_name">CovidCheckList</string>
-    <string name="title_activity_test">TestAc</string>
-    <string name="title_home">Home</string>
-    <string name="title_india">India</string>
-    <string name="title_world">World</string>
+    <string name="app_name" translatable="false">CovidCheckList</string>
+    <string name="title_activity_test" translatable="false">TestAc</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_india" translatable="false">India</string>
+    <string name="title_world" translatable="false">World</string>
+    <string name="question_1">Do you have cough?</string>
+    <string name="question_2">Do you have cold?</string>
+    <string name="question_3">Are you having Diarrhea?</string>
+    <string name="question_4">Are you experincing Body Aches?</string>
+    <string name="question_5">Do you have headache?</string>
+    <string name="question_6">Do you have have feaver ?</string>
+    <string name="question_7">h</string>
+    <string name="question_8">jj</string>
+    <string name="question_9">jhh</string>
+    <string name="question_10">jhhjg</string>
+    <string name="question_11">jjhhjg</string>
+    <string name="question_12">ygj</string>
 </resources>
