@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CovidCheckList</string>
+    <string name="title_activity_test">TestAc</string>
+    <string name="title_home">Home</string>
+    <string name="title_india">India</string>
+    <string name="title_world">World</string>
+</resources>
