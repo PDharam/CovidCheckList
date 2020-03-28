@@ -1,17 +1,23 @@
 package com.dharampravin.covidchecklist.corona_checklist.view
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.Toast
+import com.dharampravin.CovidCheckListApp
 import com.dharampravin.covidchecklist.R
+import com.dharampravin.covidchecklist.baseActivity.BaseActivity
+import com.dharampravin.covidchecklist.constants.AppConstatants
 import com.dharampravin.covidchecklist.corona_checklist.presenter.CoronaCheckListPresenter
 import com.dharampravin.covidchecklist.corona_checklist.presenter.CoronaCheckListPresenterImpl
 import com.dharampravin.covidchecklist.corona_checklist_score.view.CoronaCheckListScoreActivity
+import com.dharampravin.covidchecklist.utils.ChangeLanguageUtil
 import com.dharampravin.covidchecklist.utils.DataProvider
 import kotlinx.android.synthetic.main.activity_corona_check_list.*
 
-class CoronaCheckListActivity : AppCompatActivity(), CoronaCheckListView,
+class CoronaCheckListActivity : BaseActivity(), CoronaCheckListView,
     View.OnClickListener {
     private lateinit var calculateCoronaScorePresenter: CoronaCheckListPresenter
     private var covidchecklist = DataProvider.checkListQuestions
@@ -22,6 +28,17 @@ class CoronaCheckListActivity : AppCompatActivity(), CoronaCheckListView,
         setContentView(R.layout.activity_corona_check_list)
         init()
         setListener()
+
+        getLangageCodeFromPreference()
+    }
+
+    private fun getLangageCodeFromPreference() {
+        val preference = PreferenceManager.getDefaultSharedPreferences(this)
+
+
+        val langCode = preference.getString(AppConstatants.LANGUAGE_CODE_KEY, "En")
+
+        Toast.makeText(this, "Preference code: $langCode", Toast.LENGTH_LONG).show()
     }
 
     private fun setListener() {
@@ -63,4 +80,11 @@ class CoronaCheckListActivity : AppCompatActivity(), CoronaCheckListView,
         tv_question_count.text = "${currentQuestionPosition + 1} / 12"
         tv_question.text = covidchecklist[currentQuestionPosition].question
     }
+
+    override fun attachBaseContext(newBase: Context?) {
+        var context = ChangeLanguageUtil.changeLang(newBase, CovidCheckListApp.getApplanguageCode())
+        super.attachBaseContext(context)
+    }
+
+
 }
