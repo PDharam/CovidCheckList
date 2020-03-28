@@ -95,4 +95,5 @@ class HomeFragment : Fragment(), HomeFragmentView, View.OnClickListener {
         activity?.startActivity(refresh)
     }
 
+
 }
