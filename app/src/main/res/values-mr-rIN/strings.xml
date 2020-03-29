@@ -13,8 +13,14 @@
     <string name="question_10">तुम्ही गेल्या १४ दिवसात कुठे प्रवास केला आहे का?</string>
     <string name="question_11">तुम्ही कधी कोविड19 संक्रमित क्षेत्रात प्रवास केला आहे का?</string>
     <string name="question_12">तुम्ही कोविड१९ रुग्णांच्या थेट संपर्कात आहात का किंवा त्यांची सेवा करत आहात का?</string>
-    <string name="score_result_1">May be stress related and observe.</string>
-    <string name="score_result_2">Hydrate properly and proper personal hygiene. Observe and Re-evaluate after 2 days.</string>
-    <string name="score_result_3">Seek a consultation with Doctor.</string>
-    <string name="score_result_4">Call the DOH Hotline 02-8-651-7800.</string>
+    <string name="score_result_1">ताण संबंधित असण्याची शक्यता आहे पण निरीक्षण करत रहा</string>
+    <string name="score_result_2">भरपूर पाणी प्या आणि स्वच्छता ठेवा आणि २ दिवासानी पुन्हा तपासणी करा</string>
+    <string name="score_result_3">कृपया त्वरित डॉक्टरांचा सल्ला घ्या</string>
+    <string name="score_result_4">कृपया त्वरित डॉक्टरांचा सल्ला घ्या</string>
+    <string name="check_corona_probability">कोरोनाची संभाव्यता तपासा</string>
+    <string name="check_now">आता तपासा</string>
+    <string name="no">नाही</string>
+    <string name="yes">होय</string>
+    <string name="recommendation">शिफारस</string>
+    <string name="corona_probability">कोरोनाची संभाव्यता</string>
 </resources>

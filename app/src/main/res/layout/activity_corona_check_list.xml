@@ -23,16 +23,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/tv_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="Do you have direct contact or is taking care of a positive COVID-19 PATIENT? (3PST)?"
+        android:text="place holder text"
         android:textColor="#FFF"
         android:textSize="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_question_count" />
+         />
 
     <LinearLayout
         android:id="@+id/ll_buttons"
@@ -49,8 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#4dd689"
-            android:text="Yes"
-            android:textAllCaps="false"
+            android:text="@string/yes"
             android:textColor="#FFF"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -61,8 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#fb5252"
-            android:text="No"
-            android:textAllCaps="false"
+            android:text="@string/no"
             android:textColor="#FFF"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

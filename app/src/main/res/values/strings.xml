@@ -19,7 +19,7 @@
     <string name="score_result_1">May be stress related and observe.</string>
     <string name="score_result_2">Hydrate properly and proper personal hygiene. Observe and Re-evaluate after 2 days.</string>
     <string name="score_result_3">Seek a consultation with Doctor.</string>
-    <string name="score_result_4">Call the DOH Hotline 02-8-651-7800.</string>
+    <string name="score_result_4">Please consult to doctor immediately</string>
     <string name="india_whatsapp_url" translatable="false"><![CDATA[https://api.whatsapp.com/send?phone=919013151515&text=Namaste&source=&data=]]></string>
     <string name="who_whatspp_url" translatable="false"><![CDATA[https://api.whatsapp.com/send?phone=41794752209&text=hi&source=&data=]]></string>
     <string name="india_toll_free_helpline" translatable="false">1075</string>
@@ -40,4 +40,10 @@
     <string name="india_youtube_video1_id" translatable="false">UEfCxCLtOwk</string>
     <string name="who_youtube_video1_id" translatable="false">1APwq1df6Mw</string>
     <string name="who_youtube_video2_id" translatable="false">mOV1aBVYKGA</string>
+    <string name="check_corona_probability">Check Corona Probablity</string>
+    <string name="check_now">Check now</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="corona_probability">Corona Probability</string>
 </resources>

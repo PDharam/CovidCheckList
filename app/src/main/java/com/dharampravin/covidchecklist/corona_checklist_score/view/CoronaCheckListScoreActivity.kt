@@ -20,7 +20,7 @@ import kotlin.math.roundToInt
 
 class CoronaCheckListScoreActivity : AppCompatActivity(), CoronaCheckListScoreView,
     View.OnClickListener {
-    private val TAG = "CoronaCheckListScoreActivity";
+    private val TAG = "CoronaCheckListScoreActivity"
     private var totalPoint: Int = 0
     private lateinit var coronaCheckListScorePresenter: CoronaCheckListScorePresenter
     private lateinit var coronachecklist: MutableList<CheckListQuestion>
@@ -92,8 +92,10 @@ class CoronaCheckListScoreActivity : AppCompatActivity(), CoronaCheckListScoreVi
         LogUtils.i(TAG, "setPieChartValues: POS: $positiveScore, NEG: $negativeScore")
 
         val values = ArrayList<PieEntry>()
-        values.add(PieEntry(positiveScore, "Positive ${positiveScore.roundToInt()}%"))
-        values.add(PieEntry(negativeScore, "Negative ${negativeScore.roundToInt()}%"))
+        val coronaLocalString = resources.getString(R.string.corona_probability)
+        values.add(PieEntry(positiveScore, "$coronaLocalString ${positiveScore.roundToInt()}%"))
+        values.add(PieEntry(negativeScore, ""))
+        //values.add(PieEntry(negativeScore, "Negative ${negativeScore.roundToInt()}%"))
         val dataSet = PieDataSet(values, "Enquiry")
 
         dataSet.selectionShift = 5f

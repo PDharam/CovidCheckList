@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/tv_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +36,7 @@
         android:layout_marginTop="56dp"
         android:background="#FF9800"
         android:gravity="center_horizontal"
-        android:text="Result"
+        android:text="@string/recommendation"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FFF"
@@ -57,6 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_result_lbl" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/btn_exit_result_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
