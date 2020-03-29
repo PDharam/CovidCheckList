@@ -46,6 +46,7 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
 
     private fun setListeners()
     {
+        tv_toll_free_no.setOnClickListener(this)
         iv_play_video.setOnClickListener(this)
         iv_moh_youtube.setOnClickListener(this)
         iv_moh_pdf.setOnClickListener(this)
@@ -197,6 +198,14 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
             R.id.iv_play_video, R.id.iv_moh_youtube -> openYoutube()
 
             R.id.iv_moh_pdf -> checkPermission()
+
+            R.id.tv_toll_free_no -> dialTollFree()
         }
+    }
+
+    private fun dialTollFree() {
+        val intent = Intent(Intent.ACTION_DIAL)
+        intent.data = Uri.parse("tel:"+resources.getString(R.string.india_toll_free_helpline))
+        startActivity(intent)
     }
 }
