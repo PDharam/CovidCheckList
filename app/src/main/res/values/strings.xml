@@ -37,4 +37,7 @@
         <item>हिन्दी</item>
         <item>मराठी</item>
     </string-array>
+    <string name="india_youtube_video1_id" translatable="false">UEfCxCLtOwk</string>
+    <string name="who_youtube_video1_id" translatable="false">1APwq1df6Mw</string>
+    <string name="who_youtube_video2_id" translatable="false">mOV1aBVYKGA</string>
 </resources>

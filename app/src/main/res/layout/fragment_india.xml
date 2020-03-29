@@ -136,6 +136,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <ImageView
+            app:layout_constraintTop_toTopOf="@id/iv_moh_youtube"
+            app:layout_constraintBottom_toBottomOf="@id/iv_moh_youtube"
+            app:layout_constraintLeft_toLeftOf="@id/iv_moh_youtube"
+            app:layout_constraintRight_toRightOf="@id/iv_moh_youtube"
+            android:src="@drawable/ic_play_circle_white"
+            android:id="@+id/iv_play_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_margin="32dp"
             app:layout_constraintLeft_toLeftOf="parent"

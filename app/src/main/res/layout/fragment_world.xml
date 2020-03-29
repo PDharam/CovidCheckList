@@ -49,6 +49,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <ImageView
+            app:layout_constraintTop_toTopOf="@id/iv_who_youtube1"
+            app:layout_constraintBottom_toBottomOf="@id/iv_who_youtube1"
+            app:layout_constraintLeft_toLeftOf="@id/iv_who_youtube1"
+            app:layout_constraintRight_toRightOf="@id/iv_who_youtube1"
+            android:src="@drawable/ic_play_circle_white"
+            android:id="@+id/iv_play_video_who_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
         <TextView
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_margin="32dp"
@@ -64,6 +75,16 @@
             app:layout_constraintTop_toBottomOf="@id/tv_who_youtube2_label"
             android:src="@drawable/corona_virus_transmission"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="@id/iv_who_youtube2"
+            app:layout_constraintBottom_toBottomOf="@id/iv_who_youtube2"
+            app:layout_constraintLeft_toLeftOf="@id/iv_who_youtube2"
+            app:layout_constraintRight_toRightOf="@id/iv_who_youtube2"
+            android:src="@drawable/ic_play_circle_white"
+            android:id="@+id/iv_play_video_who_2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
