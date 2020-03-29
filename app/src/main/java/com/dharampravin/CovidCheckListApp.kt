@@ -6,7 +6,6 @@ import android.content.res.Configuration
 import android.content.res.Resources
 import android.preference.PreferenceManager
 import android.util.DisplayMetrics
-import android.widget.Toast
 import com.dharampravin.covidchecklist.constants.AppConstatants
 import java.util.*
 
@@ -37,8 +36,6 @@ class CovidCheckListApp : Application() {
         {
             val preference = PreferenceManager.getDefaultSharedPreferences(getAppContext())
             preference.edit().putString(AppConstatants.LANGUAGE_CODE_KEY,languageCode).apply()
-            val langCode = preference.getString(AppConstatants.LANGUAGE_CODE_KEY, "en")
-            Toast.makeText(getAppContext(), "Preference code: " + langCode, Toast.LENGTH_LONG).show()
         }
 
         fun updateSharedpreferenceSelectedLangaugePosition(position: Int)
@@ -63,7 +60,6 @@ class CovidCheckListApp : Application() {
     private fun getLangageCodeFromPreference():String? {
         val preference = PreferenceManager.getDefaultSharedPreferences(getAppContext())
         val langCode = preference.getString(AppConstatants.LANGUAGE_CODE_KEY, "en")
-        Toast.makeText(getAppContext(), "Preference code: $langCode", Toast.LENGTH_LONG).show()
         return langCode
     }
 

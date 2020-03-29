@@ -3,13 +3,10 @@ package com.dharampravin.covidchecklist.corona_checklist.view
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.preference.PreferenceManager
 import android.view.View
-import android.widget.Toast
 import com.dharampravin.CovidCheckListApp
 import com.dharampravin.covidchecklist.R
 import com.dharampravin.covidchecklist.baseActivity.BaseActivity
-import com.dharampravin.covidchecklist.constants.AppConstatants
 import com.dharampravin.covidchecklist.corona_checklist.presenter.CoronaCheckListPresenter
 import com.dharampravin.covidchecklist.corona_checklist.presenter.CoronaCheckListPresenterImpl
 import com.dharampravin.covidchecklist.corona_checklist_score.view.CoronaCheckListScoreActivity
@@ -28,17 +25,6 @@ class CoronaCheckListActivity : BaseActivity(), CoronaCheckListView,
         setContentView(R.layout.activity_corona_check_list)
         init()
         setListener()
-
-        getLangageCodeFromPreference()
-    }
-
-    private fun getLangageCodeFromPreference() {
-        val preference = PreferenceManager.getDefaultSharedPreferences(this)
-
-
-        val langCode = preference.getString(AppConstatants.LANGUAGE_CODE_KEY, "En")
-
-        Toast.makeText(this, "Preference code: $langCode", Toast.LENGTH_LONG).show()
     }
 
     private fun setListener() {
