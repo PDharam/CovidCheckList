@@ -13,7 +13,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
@@ -44,8 +43,7 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
         setListeners()
     }
 
-    private fun setListeners()
-    {
+    private fun setListeners() {
         tv_toll_free_no.setOnClickListener(this)
         iv_play_video.setOnClickListener(this)
         iv_moh_youtube.setOnClickListener(this)
@@ -56,7 +54,6 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
     override fun init() {
         indiaFragmentPresenter = IndiaFragmentPresenterImpl(this)
     }
-
 
 
     override fun openPDF() {
@@ -79,16 +76,24 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
         }
     }
 
-    private fun checkPermission()
-    {
+    private fun checkPermission() {
         val permissionCheck = ContextCompat.checkSelfPermission(
             activity!!,
             Manifest.permission.READ_EXTERNAL_STORAGE
         )
 
+        /**
+         * FOR ACTIVITY
+         * ActivityCompat.requestPermissions(this,
+         * new String[]{Manifest.permission.CAMERA},
+         * MY_PERMISSIONS_REQUEST_CAMERA);
+         *
+         * FOR FRAGMENT
+         * requestPermissions(new String[]{Manifest.permission.CAMERA},
+         * MY_PERMISSIONS_REQUEST_CAMERA);
+         */
         if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(
-                activity!!,
+            requestPermissions(
                 arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
                 MY_PERMISSIONS_REQUEST_READ_MEDIA
             )
@@ -97,8 +102,7 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
         }
     }
 
-    fun  openPDFFile()
-    {
+    fun openPDFFile() {
         val fileBrochure =
             File(Environment.getExternalStorageDirectory().toString() + "/" + "India.pdf")
         if (!fileBrochure.exists()) {
@@ -112,7 +116,11 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
 
         val intent = Intent(Intent.ACTION_VIEW)
 
-        val uri = FileProvider.getUriForFile(activity!!,activity?.application?.packageName + ".provider", file)
+        val uri = FileProvider.getUriForFile(
+            activity!!,
+            activity?.application?.packageName + ".provider",
+            file
+        )
         intent.setDataAndType(uri, "application/pdf")
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
@@ -193,8 +201,7 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
 
     override fun onClick(view: View?) {
 
-        when(view?.id)
-        {
+        when (view?.id) {
             R.id.iv_play_video, R.id.iv_moh_youtube -> openYoutube()
 
             R.id.iv_moh_pdf -> checkPermission()
@@ -205,7 +212,7 @@ class IndiaFragment : Fragment(), IndiaFragmentView, View.OnClickListener {
 
     private fun dialTollFree() {
         val intent = Intent(Intent.ACTION_DIAL)
-        intent.data = Uri.parse("tel:"+resources.getString(R.string.india_toll_free_helpline))
+        intent.data = Uri.parse("tel:" + resources.getString(R.string.india_toll_free_helpline))
         startActivity(intent)
     }
 }

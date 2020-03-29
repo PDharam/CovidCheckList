@@ -34,4 +34,6 @@ class DashboardActivity : BaseActivity(), DashboardView {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
+
 }
