@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CovidCheckList</string>
+    <string name="question_1">તમને ખાંસી છે?</string>
+    <string name="question_2">તમને શરદી છે?</string>
+    <string name="question_3">તમને અતિસાર / ઝાડા છે?</string>
+    <string name="question_4">તમને ગળામાં દુખાવો/ખીચખીચાહટ  છે?</string>
+    <string name="question_5">તમને શરીરમાં દુખાવો  છે?</string>
+    <string name="question_6">માથું દુખે છે?</string>
+    <string name="question_7">તાવ આવ્યો છે (શરીરનું તાપમાન 37.8 °C કરતા વધારે છે?)?</string>
+    <string name="question_8">શ્વાસ લેવામાં તકલીફ છે?</string>
+    <string name="question_9">થાક લાગે છે?</string>
+    <string name="question_10">શું તમે પાછલા 14 દિવસોમાં પ્રવાસ/યાત્રા કરી છે?</string>
+    <string name="question_11">શું તમે COVID-19 સંક્રમિત ક્ષેત્રમાં પ્રવાસ/યાત્રા કરી છે?</string>
+    <string name="corona_probability">તમને કોરોના થયો હોવાની સંભાવના?</string>
+    <string name="recommendation">"સિફારિશ "</string>
+    <string name="yes">"હાં "</string>
+    <string name="no">"ના "</string>
+    <string name="check_now">"ચેક કરો "</string>
+    <string name="check_corona_probability">"આપને કોરોના થયો હોવાની સંભાવના ચેક કરો"</string>
+    <string name="score_result_4">"તરત જ ડોક્ટર પાસે જઈ તપાસ કરવો"</string>
+    <string name="score_result_3">"ડોક્ટર પાસે જઈ તપાસ કરવો "</string>
+    <string name="score_result_1">"માનસિક તણાવને કારણે હોય શકે, એમ છતાં નિરીક્ષણ કરતા રેહજો "</string>
+    <string name="question_12">"શું તમે COVID-19 સંક્રમિત વ્યક્તિની સારવાર કરી રહ્યા છો અથવા એવા કોઈ પણ વ્યક્તિના સંપર્કમાં છો? "</string>
+    <string name="score_result_2">"પાણી વધારે પીવાનું રાખો અને સ્વછતા તથા કાળજી રાખો, 2 દિવસ સુધી નિરીક્ષણ કરો અને પછી ફરી તપાસણી કરો."</string>
+</resources>

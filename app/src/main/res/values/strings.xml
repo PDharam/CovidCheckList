@@ -36,17 +36,18 @@
         <item>English</item>
         <item>हिन्दी</item>
         <item>मराठी</item>
+        <item>ગુજરાતી</item>
     </string-array>
     <string name="india_youtube_video1_id" translatable="false">UEfCxCLtOwk</string>
     <string name="who_youtube_video1_id" translatable="false">1APwq1df6Mw</string>
     <string name="who_youtube_video2_id" translatable="false">mOV1aBVYKGA</string>
-    <string name="check_corona_probability">Check Corona Probablity</string>
+    <string name="check_corona_probability">Check Corona Probability</string>
     <string name="check_now">Check now</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
     <string name="recommendation">Recommendation</string>
     <string name="corona_probability">Corona Probability</string>
-    <string name="youtube_videos">Youtube Videos</string>
-    <string name="emails">Emails</string>
-    <string name="faq_pdf">FAQ PDF</string>
+    <string name="youtube_videos" translatable="false">Youtube Videos</string>
+    <string name="emails" translatable="false">Emails</string>
+    <string name="faq_pdf" translatable="false">FAQ PDF</string>
 </resources>

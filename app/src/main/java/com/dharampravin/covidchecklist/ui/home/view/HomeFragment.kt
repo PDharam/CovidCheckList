@@ -84,6 +84,7 @@ class HomeFragment : Fragment(), HomeFragmentView, View.OnClickListener {
             0 -> "en"
             1 -> "hi"
             2 -> "mr"
+            3 -> "gu"
             else -> "en"
         }
 
