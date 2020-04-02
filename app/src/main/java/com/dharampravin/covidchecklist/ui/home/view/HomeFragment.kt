@@ -1,5 +1,6 @@
 package com.dharampravin.covidchecklist.ui.home.view
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -69,8 +70,24 @@ class HomeFragment : Fragment(), HomeFragmentView, View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.btn_calculate -> openCalcuateCoronaScoreActivity()
+            R.id.btn_calculate -> disclaimerAlertDialog()
         }
+    }
+
+    private fun disclaimerAlertDialog()
+    {
+        val builder = AlertDialog.Builder(context)
+        builder.apply {
+            setTitle(resources.getString(R.string.disclaimer))
+            setMessage(resources.getString(R.string.disclaimer_msg))
+            setCancelable(false)
+            setPositiveButton(resources.getString(R.string.agree)) { dialogInterface, i ->  openCalcuateCoronaScoreActivity()}
+            setNegativeButton(resources.getString(R.string.no)) { dialogInterface, i -> dialogInterface.cancel()}
+        }
+
+        val disclaimerAlertDialog = builder.create()
+        disclaimerAlertDialog.show()
+
     }
 
     private fun openCalcuateCoronaScoreActivity() {

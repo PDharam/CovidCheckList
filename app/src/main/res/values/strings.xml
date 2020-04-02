@@ -50,4 +50,7 @@
     <string name="youtube_videos" translatable="false">Youtube Videos</string>
     <string name="emails" translatable="false">Emails</string>
     <string name="faq_pdf" translatable="false">FAQ PDF</string>
+    <string name="disclaimer" translatable="false">Disclaimer</string>
+    <string name="disclaimer_msg" translatable="false">The tool is for informational purposes only, and is not intended to replace the advise of a medical professional.</string>
+    <string name="agree" translatable="false">I am agree</string>
 </resources>
